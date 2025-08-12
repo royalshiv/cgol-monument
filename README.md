@@ -40,17 +40,19 @@ After cloning the repo, run **everything** (backend + UI) with one command:
 ```bash
 ./run.sh
 
-'''
 This will:
 
-1. "Create a virtual environment (if missing)"
-2. "Install dependencies"
-3. "Start the FastAPI backend"
-4. "Launch the Streamlit UI in your browser"
+1. Create a virtual environment (if missing)
+2. Install dependencies
+3. Start the FastAPI backend
+4. Launch the Streamlit UI in your browser
 
-🛠 Manual Setup (If you prefer step-by-step)
+---
 
-1️⃣ Clone the repo
+🛠 **Manual Setup** (If you prefer step-by-step)
+
+1️⃣ **Clone the repo**
+```bash
 git clone https://github.com/royalshiv/cgol-monument.git
 cd cgol-monument
 
@@ -59,12 +61,13 @@ python -m venv .venv
 source .venv/Scripts/activate
 
 3️⃣ Install dependencies
+
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 
 4️⃣ Run the backend
 uvicorn server.app:app --reload --port 8000
-Visit: http://127.0.0.1:8000/healthz to check status.
+Visit: 'http://127.0.0.1:8000/healthz' to check status.
 
 5️⃣ Run the UI (in another terminal)
 export PYTHONPATH=.      # Git Bash / Mac
@@ -72,6 +75,7 @@ export PYTHONPATH=.      # Git Bash / Mac
 streamlit run ui/app.py
 
 📂 Project Structure
+
 cgol-monument/
 ├── client/               # Python tool callable by LLM
 │   ├── __init__.py
@@ -87,4 +91,3 @@ cgol-monument/
 ├── run.sh                # One-command startup script
 ├── requirements.txt
 └── README.md
-'''
