@@ -38,9 +38,9 @@ Implements a RESTful backend for a variation of **Conway’s Game of Life**, a P
 After cloning the repo, run **everything** (backend + UI) with one command:
 
 ```bash
-'''
+
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/royalshiv/cgol-monument)
-```bash
+
 
 ./run.sh
 
