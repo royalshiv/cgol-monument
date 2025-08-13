@@ -40,6 +40,7 @@ After cloning the repo, run **everything** (backend + UI) with one command:
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/royalshiv/cgol-monument)
 
 ```bash
+chmod +x run.sh
 ./run.sh
 
 This will:
